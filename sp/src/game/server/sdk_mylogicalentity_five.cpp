@@ -14,6 +14,8 @@ private:
 	int m_iTicks{ 0 };
 };
 
+LINK_ENTITY_TO_CLASS(my_logic_5, CMyLogicFive);
+
 BEGIN_DATADESC(CMyLogicFive)
 	DEFINE_FIELD(m_iTicks, FIELD_INTEGER),
 
