@@ -21,11 +21,6 @@ $Configuration
 
 $Project "Server (Episodic)"
 {
-	$Folder "My Stuff"
-	{
-		$File "$SRCDIR/game/server/sdk_mylogicalentity.cpp "
-	}
-
 	$Folder	"Source Files"
 	{
 		$File	"ai_eventresponse.cpp"
