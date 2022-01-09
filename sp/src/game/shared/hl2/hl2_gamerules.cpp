@@ -102,40 +102,40 @@ ConVar	sk_ammo_qty_scale3 ( "sk_ammo_qty_scale3", "0.60", FCVAR_REPLICATED );
 ConVar	sk_plr_health_drop_time		( "sk_plr_health_drop_time", "30", FCVAR_REPLICATED );
 ConVar	sk_plr_grenade_drop_time	( "sk_plr_grenade_drop_time", "30", FCVAR_REPLICATED );
 
-ConVar	sk_plr_dmg_ar2			( "sk_plr_dmg_ar2","0", FCVAR_REPLICATED );
+ConVar	sk_plr_dmg_ar2			( "sk_plr_dmg_ar2","20", FCVAR_REPLICATED );
 ConVar	sk_npc_dmg_ar2			( "sk_npc_dmg_ar2","0", FCVAR_REPLICATED);
-ConVar	sk_max_ar2				( "sk_max_ar2","0", FCVAR_REPLICATED);
-ConVar	sk_max_ar2_altfire		( "sk_max_ar2_altfire","0", FCVAR_REPLICATED);
+ConVar	sk_max_ar2				( "sk_max_ar2","90", FCVAR_REPLICATED);
+ConVar	sk_max_ar2_altfire		( "sk_max_ar2_altfire","30", FCVAR_REPLICATED);
 
-ConVar	sk_plr_dmg_alyxgun		( "sk_plr_dmg_alyxgun","0", FCVAR_REPLICATED );
+ConVar	sk_plr_dmg_alyxgun		( "sk_plr_dmg_alyxgun","10", FCVAR_REPLICATED );
 ConVar	sk_npc_dmg_alyxgun		( "sk_npc_dmg_alyxgun","0", FCVAR_REPLICATED);
-ConVar	sk_max_alyxgun			( "sk_max_alyxgun","0", FCVAR_REPLICATED);
+ConVar	sk_max_alyxgun			( "sk_max_alyxgun","50", FCVAR_REPLICATED);
 
-ConVar	sk_plr_dmg_pistol		( "sk_plr_dmg_pistol","0", FCVAR_REPLICATED );
+ConVar	sk_plr_dmg_pistol		( "sk_plr_dmg_pistol","12", FCVAR_REPLICATED );
 ConVar	sk_npc_dmg_pistol		( "sk_npc_dmg_pistol","0", FCVAR_REPLICATED);
-ConVar	sk_max_pistol			( "sk_max_pistol","0", FCVAR_REPLICATED);
+ConVar	sk_max_pistol			( "sk_max_pistol","1000", FCVAR_REPLICATED);
 
-ConVar	sk_plr_dmg_smg1			( "sk_plr_dmg_smg1","0", FCVAR_REPLICATED );
+ConVar	sk_plr_dmg_smg1			( "sk_plr_dmg_smg1","10", FCVAR_REPLICATED );
 ConVar	sk_npc_dmg_smg1			( "sk_npc_dmg_smg1","0", FCVAR_REPLICATED);
-ConVar	sk_max_smg1				( "sk_max_smg1","0", FCVAR_REPLICATED);
+ConVar	sk_max_smg1				( "sk_max_smg1","230", FCVAR_REPLICATED);
 
 // FIXME: remove these
 //ConVar	sk_plr_dmg_flare_round	( "sk_plr_dmg_flare_round","0", FCVAR_REPLICATED);
 //ConVar	sk_npc_dmg_flare_round	( "sk_npc_dmg_flare_round","0", FCVAR_REPLICATED);
 //ConVar	sk_max_flare_round		( "sk_max_flare_round","0", FCVAR_REPLICATED);
 
-ConVar	sk_plr_dmg_buckshot		( "sk_plr_dmg_buckshot","0", FCVAR_REPLICATED);	
+ConVar	sk_plr_dmg_buckshot		( "sk_plr_dmg_buckshot","50", FCVAR_REPLICATED);	
 ConVar	sk_npc_dmg_buckshot		( "sk_npc_dmg_buckshot","0", FCVAR_REPLICATED);
-ConVar	sk_max_buckshot			( "sk_max_buckshot","0", FCVAR_REPLICATED);
+ConVar	sk_max_buckshot			( "sk_max_buckshot","30", FCVAR_REPLICATED);
 ConVar	sk_plr_num_shotgun_pellets( "sk_plr_num_shotgun_pellets","7", FCVAR_REPLICATED);
 
-ConVar	sk_plr_dmg_rpg_round	( "sk_plr_dmg_rpg_round","0", FCVAR_REPLICATED);
+ConVar	sk_plr_dmg_rpg_round	( "sk_plr_dmg_rpg_round","10", FCVAR_REPLICATED);
 ConVar	sk_npc_dmg_rpg_round	( "sk_npc_dmg_rpg_round","0", FCVAR_REPLICATED);
-ConVar	sk_max_rpg_round		( "sk_max_rpg_round","0", FCVAR_REPLICATED);
+ConVar	sk_max_rpg_round		( "sk_max_rpg_round","10", FCVAR_REPLICATED);
 
-ConVar	sk_plr_dmg_sniper_round	( "sk_plr_dmg_sniper_round","0", FCVAR_REPLICATED);	
+ConVar	sk_plr_dmg_sniper_round	( "sk_plr_dmg_sniper_round","10", FCVAR_REPLICATED);	
 ConVar	sk_npc_dmg_sniper_round	( "sk_npc_dmg_sniper_round","0", FCVAR_REPLICATED);
-ConVar	sk_max_sniper_round		( "sk_max_sniper_round","0", FCVAR_REPLICATED);
+ConVar	sk_max_sniper_round		( "sk_max_sniper_round","10", FCVAR_REPLICATED);
 
 //ConVar	sk_max_slam				( "sk_max_slam","0", FCVAR_REPLICATED);
 //ConVar	sk_max_tripwire			( "sk_max_tripwire","0", FCVAR_REPLICATED);
@@ -144,9 +144,9 @@ ConVar	sk_max_sniper_round		( "sk_max_sniper_round","0", FCVAR_REPLICATED);
 //ConVar	sk_npc_dmg_molotov		( "sk_npc_dmg_molotov","0", FCVAR_REPLICATED);
 //ConVar	sk_max_molotov			( "sk_max_molotov","0", FCVAR_REPLICATED);
 
-ConVar	sk_plr_dmg_grenade		( "sk_plr_dmg_grenade","0", FCVAR_REPLICATED);
-ConVar	sk_npc_dmg_grenade		( "sk_npc_dmg_grenade","0", FCVAR_REPLICATED);
-ConVar	sk_max_grenade			( "sk_max_grenade","0", FCVAR_REPLICATED);
+ConVar	sk_plr_dmg_grenade		( "sk_plr_dmg_grenade","50", FCVAR_REPLICATED);
+ConVar	sk_npc_dmg_grenade		( "sk_npc_dmg_grenade","50", FCVAR_REPLICATED);
+ConVar	sk_max_grenade			( "sk_max_grenade","3", FCVAR_REPLICATED);
 
 #ifdef HL2_EPISODIC
 ConVar	sk_max_hopwire			( "sk_max_hopwire", "3", FCVAR_REPLICATED);
@@ -157,25 +157,25 @@ ConVar	sk_max_striderbuster	( "sk_max_striderbuster", "3", FCVAR_REPLICATED);
 //ConVar sk_npc_dmg_brickbat	( "sk_npc_dmg_brickbat","0", FCVAR_REPLICATED);
 //ConVar sk_max_brickbat		( "sk_max_brickbat","0", FCVAR_REPLICATED);
 
-ConVar	sk_plr_dmg_smg1_grenade	( "sk_plr_dmg_smg1_grenade","0", FCVAR_REPLICATED);
-ConVar	sk_npc_dmg_smg1_grenade	( "sk_npc_dmg_smg1_grenade","0", FCVAR_REPLICATED);
-ConVar	sk_max_smg1_grenade		( "sk_max_smg1_grenade","0", FCVAR_REPLICATED );
+ConVar	sk_plr_dmg_smg1_grenade	( "sk_plr_dmg_smg1_grenade","50", FCVAR_REPLICATED);
+ConVar	sk_npc_dmg_smg1_grenade	( "sk_npc_dmg_smg1_grenade","50", FCVAR_REPLICATED);
+ConVar	sk_max_smg1_grenade		( "sk_max_smg1_grenade","100", FCVAR_REPLICATED );
 
-ConVar	sk_plr_dmg_357			( "sk_plr_dmg_357", "0", FCVAR_REPLICATED );
+ConVar	sk_plr_dmg_357			( "sk_plr_dmg_357", "30", FCVAR_REPLICATED );
 ConVar	sk_npc_dmg_357			( "sk_npc_dmg_357", "0", FCVAR_REPLICATED );
-ConVar	sk_max_357				( "sk_max_357", "0", FCVAR_REPLICATED );
+ConVar	sk_max_357				( "sk_max_357", "30", FCVAR_REPLICATED );
 
-ConVar	sk_plr_dmg_crossbow		( "sk_plr_dmg_crossbow", "0", FCVAR_REPLICATED );
+ConVar	sk_plr_dmg_crossbow		( "sk_plr_dmg_crossbow", "120", FCVAR_REPLICATED );
 ConVar	sk_npc_dmg_crossbow		( "sk_npc_dmg_crossbow", "0", FCVAR_REPLICATED );
-ConVar	sk_max_crossbow			( "sk_max_crossbow", "0", FCVAR_REPLICATED );
+ConVar	sk_max_crossbow			( "sk_max_crossbow", "999", FCVAR_REPLICATED );
 
-ConVar	sk_dmg_sniper_penetrate_plr( "sk_dmg_sniper_penetrate_plr","0", FCVAR_REPLICATED);
+ConVar	sk_dmg_sniper_penetrate_plr( "sk_dmg_sniper_penetrate_plr","30", FCVAR_REPLICATED);
 ConVar	sk_dmg_sniper_penetrate_npc( "sk_dmg_sniper_penetrate_npc","0", FCVAR_REPLICATED);
 
 ConVar	sk_plr_dmg_airboat		( "sk_plr_dmg_airboat", "0", FCVAR_REPLICATED );
 ConVar	sk_npc_dmg_airboat		( "sk_npc_dmg_airboat", "0", FCVAR_REPLICATED );
 
-ConVar	sk_max_gauss_round		( "sk_max_gauss_round", "0", FCVAR_REPLICATED );
+ConVar	sk_max_gauss_round		( "sk_max_gauss_round", "300", FCVAR_REPLICATED );
 
 // Gunship & Dropship cannons
 ConVar	sk_npc_dmg_gunship			( "sk_npc_dmg_gunship", "0", FCVAR_REPLICATED );

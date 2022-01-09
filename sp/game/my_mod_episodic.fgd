@@ -1,0 +1,13 @@
+@include "base.fgd"
+
+@PointClass base(Targetname) = my_logical_entity : "Tutorial logical entity."
+[
+	Threshold(integer) : "Threshold" : 1 : "Threshold value."
+	input Tick(void) : "Adds one tick to the entity's count."
+	output OnThreshold(void) : "Threshold was hit."
+]
+
+@PointClass base(Targetname) = my_logic_5 : "Tutorial subcase logical entity."
+[
+	input Tick(void) : "Adds one tick to the entity's count."
+]

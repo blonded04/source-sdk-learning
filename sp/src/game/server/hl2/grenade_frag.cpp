@@ -23,9 +23,9 @@
 
 const float GRENADE_COEFFICIENT_OF_RESTITUTION = 0.2f;
 
-ConVar sk_plr_dmg_fraggrenade	( "sk_plr_dmg_fraggrenade","0");
-ConVar sk_npc_dmg_fraggrenade	( "sk_npc_dmg_fraggrenade","0");
-ConVar sk_fraggrenade_radius	( "sk_fraggrenade_radius", "0");
+ConVar sk_plr_dmg_fraggrenade	( "sk_plr_dmg_fraggrenade","50");
+ConVar sk_npc_dmg_fraggrenade	( "sk_npc_dmg_fraggrenade","50");
+ConVar sk_fraggrenade_radius	( "sk_fraggrenade_radius", "256");
 
 #define GRENADE_MODEL "models/Weapons/w_grenade.mdl"
 
