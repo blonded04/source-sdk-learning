@@ -12,7 +12,7 @@
 	input Tick(void) : "Adds one tick to the entity's count."
 ]
 
-@PointClass base(Targetname) studio("models/gibs/airboat_broken_engine.mdl")= my_model_entity :  "Tutorial model entity."
+@PointClass base(Targetname) studio("models/combine_scanner.mdl")= my_model_entity :  "Tutorial model entity."
 [
 	input Toggle(void) : "Toggle movement."
 ]

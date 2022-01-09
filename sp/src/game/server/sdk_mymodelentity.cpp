@@ -29,7 +29,7 @@ BEGIN_DATADESC(CMyModelEntity)
 	DEFINE_THINKFUNC(MoveThink),
 END_DATADESC()
 
-#define ENTITY_MODEL "models/gibs/airboat_broken_engine.mdl"
+#define ENTITY_MODEL "models/combine_scanner.mdl"
 
 void CMyModelEntity::Precache(void) {
 	PrecacheModel(ENTITY_MODEL);
@@ -43,6 +43,10 @@ void CMyModelEntity::Spawn(void) {
 	SetModel(ENTITY_MODEL);
 	SetSolid(SOLID_BBOX);
 	UTIL_SetSize(this, -Vector(20, 20, 20), Vector(20, 20, 20));
+
+	SetSequence(LookupSequence("idle"));
+	SetPlaybackRate(1.0f);
+	UseClientSideAnimation();
 }
 
 void CMyModelEntity::MoveThink(void) {
@@ -77,5 +81,25 @@ void CMyModelEntity::InputToggle(inputdata_t& inputData) {
 		SetMoveType(MOVETYPE_NONE);
 
 		m_bActive = false;
+	}
+}
+
+CON_COMMAND(create_sdk_mymodelentity, "Creates an instance of My Model Entity in front of the player.") {
+	CBasePlayer* pPlayer = UTIL_GetCommandClient();
+	if (pPlayer == nullptr) {
+		Warning("Couldn't determine who called command!\n");
+		return;
+	}
+
+	CBaseEntity* pEnt = CreateEntityByName("my_model_entity");
+	if (pEnt != nullptr) {
+		Vector vecForward;
+		AngleVectors(pPlayer->EyeAngles(), &vecForward);
+		Vector vecOrigin = pPlayer->GetAbsOrigin() + vecForward * 256 + Vector(0, 0, 64);
+		QAngle vecAngles(0, pPlayer->GetAbsAngles().y - 90, 0);
+
+		pEnt->SetAbsOrigin(vecOrigin);
+		pEnt->SetAbsAngles(vecAngles);
+		DispatchSpawn(pEnt);
 	}
 }
