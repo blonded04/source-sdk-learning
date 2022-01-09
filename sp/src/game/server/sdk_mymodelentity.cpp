@@ -73,6 +73,10 @@ void CMyModelEntity::InputToggle(inputdata_t& inputData) {
 		m_flNextChangeTime = gpGlobals->curtime;
 
 		m_bActive = true;
+
+		SetSequence(LookupSequence("inspect2"));
+		SetPlaybackRate(1.0f);
+		UseClientSideAnimation();
 	}
 	else {
 		SetThink(nullptr);
@@ -81,6 +85,10 @@ void CMyModelEntity::InputToggle(inputdata_t& inputData) {
 		SetMoveType(MOVETYPE_NONE);
 
 		m_bActive = false;
+
+		SetSequence(LookupSequence("idle"));
+		SetPlaybackRate(1.0f);
+		UseClientSideAnimation();
 	}
 }
 

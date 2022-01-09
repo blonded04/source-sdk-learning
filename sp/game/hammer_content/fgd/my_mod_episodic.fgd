@@ -16,3 +16,10 @@
 [
 	input Toggle(void) : "Toggle movement."
 ]
+
+@include "base.fgd"
+
+@SolidClass base(Targetname) = my_brush_entity : "Tutorial brush entity."
+[
+	
+]
