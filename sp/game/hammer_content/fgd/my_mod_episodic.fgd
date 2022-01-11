@@ -24,7 +24,3 @@
 	
 ]
 
-@PointClass base(Weapon) studio("models/weapons/models/weapons/w_smg1.mdl") = weapon_tutorial : "Tutorial Gun." 
-[
-
-]

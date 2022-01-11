@@ -42,6 +42,7 @@ STUB_WEAPON_CLASS( weapon_hopwire, WeaponHopwire, C_BaseHLCombatWeapon );
 #ifdef HL2_LOSTCOAST
 STUB_WEAPON_CLASS( weapon_oldmanharpoon, WeaponOldManHarpoon, C_WeaponCitizenPackage );
 #endif
+STUB_WEAPON_CLASS( weapon_my_mp5, MyWeaponMP5, C_HLSelectFireMachineGun);  // Generate client definition for our weapon
 #endif
 
 
